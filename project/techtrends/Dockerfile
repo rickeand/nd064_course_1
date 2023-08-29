@@ -2,7 +2,7 @@ FROM python:3.8
 
 WORKDIR .
 
-ADD ./project/techtrends/ .
+ADD . .
 
 RUN pip install -r requirements.txt && python init_db.py
 
