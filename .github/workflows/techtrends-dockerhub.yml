@@ -30,4 +30,4 @@ jobs:
           context: .
           file: ./project/techtrends/Dockerfile
           push: true
-          tags: nd064_course_1/techtrends:latest
+          tags: rickeand/techtrends:latest
