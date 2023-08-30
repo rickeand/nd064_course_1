@@ -42,5 +42,5 @@ spec:
               memory: {{ .Values.resources.requests.memory }}
               cpu: {{ .Values.resources.requests.cpu }}
             limits:
-              memory: {{ .Valuesresourcesresources.limits.memory }}
+              memory: {{ .Values.resources.limits.memory }}
               cpu: {{ .Values.resources.limits.memory }}
