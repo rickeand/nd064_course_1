@@ -9,7 +9,6 @@ service:
 
 image:
   repository: rickeand/techtrends
-  tag: latest
   pullPolicy: Always
 
 replicaCount: 5
