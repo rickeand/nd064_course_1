@@ -16,11 +16,11 @@ replicaCount: 5
 
 resources:
   requests:
-    memory: 128Mi
-    cpu: 350m
+    memory: 90Mi #128Mi
+    cpu: 250m #350m
   limits:
-    memory: 256Mi
-    cpi:  500m
+    memory: 90Mi #256Mi
+    cpi:  250m #500m
 
 containerPort: 3111
 livenessProbe: /healthz
