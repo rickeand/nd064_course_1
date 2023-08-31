@@ -20,7 +20,7 @@ resources:
     cpu: 250m #350m
   limits:
     memory: 90Mi #256Mi
-    cpi:  250m #500m
+    cpu:  250m #500m
 
 containerPort: 3111
 livenessProbe: /healthz
