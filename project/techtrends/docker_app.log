@@ -1,15 +1,12 @@
-## Docker commands used to build the application 
-# docker build .
-
-## Docker commands used to run the application
-# docker run -p 7111:3111 8bd2b08308af
-
-## Docker commands used to get the application logs
-# docker tag  8bd2b08308af techtrends
-
-## Logs from the container running the TechTrends application
-# docker cp clever_easley:./app.log docker_app.log
-
+2023-09-01 11:52:43,551 - werkzeug - 127.0.0.1 - - [01/Sep/2023 11:52:43] "GET /1 HTTP/1.1" 200 -
+2023-09-01 11:52:44,572 - app - About us opened
+2023-09-01 11:52:44,576 - werkzeug - 127.0.0.1 - - [01/Sep/2023 11:52:44] "GET /about HTTP/1.1" 200 -
+2023-09-01 11:52:56,382 - werkzeug - 127.0.0.1 - - [01/Sep/2023 11:52:56] "GET / HTTP/1.1" 200 -
+2023-09-01 11:52:57,141 - werkzeug - 127.0.0.1 - - [01/Sep/2023 11:52:57] "GET /1 HTTP/1.1" 200 -
+2023-09-01 11:53:12,632 - werkzeug - 127.0.0.1 - - [01/Sep/2023 11:53:12] "GET /create HTTP/1.1" 200 -
+2023-09-01 11:53:15,102 - app - Post with title est created
+2023-09-01 11:53:15,103 - werkzeug - 127.0.0.1 - - [01/Sep/2023 11:53:15] "[32mPOST /create HTTP/1.1[0m" 302 -
+2023-09-01 11:53:15,108 - werkzeug - 127.0.0.1 - - [01/Sep/2023 11:53:15] "GET / HTTP/1.1" 200 -
 2023-09-01 10:56:46,478 - werkzeug -  * Running on all addresses.
    WARNING: This is a development server. Do not use it in a production deployment.
 2023-09-01 10:56:46,478 - werkzeug -  * Running on http://172.17.0.2:3111/ (Press CTRL+C to quit)

@@ -23,7 +23,6 @@ def get_post(post_id):
     post = connection.execute('SELECT * FROM posts WHERE id = ?',
                               (post_id,)).fetchone()
     connection.close()
-    app.logger.info(f'Article {post["title"]} retrieved')
     return post
 
 
@@ -50,6 +49,7 @@ def post(post_id):
         app.logger.info(f'Post with ID {post_id} resulted in 404')
         return render_template('404.html'), 404
     else:
+        app.logger.info(f'Post with ID {post_id} opened')
         return render_template('post.html', post=post)
 
 
@@ -110,5 +110,6 @@ def metrics():
 
 # start the application on port 3111
 if __name__ == "__main__":
-    logging.basicConfig(filename='app.log', level=logging.DEBUG)
+    format = '%(asctime)s - %(name)s - %(message)s'
+    logging.basicConfig(filename='app.log', format=format, level=logging.DEBUG)
     app.run(host='0.0.0.0', port='3111')
